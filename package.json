@@ -1,0 +1,50 @@
+{
+  "name": "enhanced-ai-sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "author": {
+    "name": "James Tsang",
+    "url": "https://github.com/jtsang4"
+  },
+  "homepage": "https://github.com/jtsang4/enhanced-ai-sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtsang4/enhanced-ai-sdk.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "biome format --write",
+    "test": "rstest"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "@rslib/core": "^0.13.3",
+    "@rstest/core": "^0.3.4",
+    "@types/node": "^22.18.4",
+    "dotenv": "^17.2.2",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "@ai-sdk/openai": "^2.0.0",
+    "ai": "^5.0.0",
+    "zod": "^4.0.0"
+  },
+  "dependencies": {
+    "@boundaryml/baml": "^0.207.1",
+    "jiti": "^2.5.1"
+  }
+}
