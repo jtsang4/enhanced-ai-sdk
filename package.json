@@ -1,6 +1,6 @@
 {
   "name": "enhanced-ai-sdk",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "type": "module",
   "author": {
     "name": "James Tsang",
@@ -32,8 +32,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.3",
+    "@microsoft/api-extractor": "^7.52.13",
     "@rslib/core": "^0.13.3",
-    "@rstest/core": "^0.3.4",
+    "@rstest/core": "^0.4.0",
     "@types/node": "^22.18.4",
     "dotenv": "^17.2.2",
     "typescript": "^5.9.2"

@@ -23,7 +23,7 @@ test('generateObjectCompat parses simple object (real model call)', async () => 
   });
 
   const res = await generateObjectCompat({
-    model: openai.chat('deepseek-v3.1-250821'),
+    model: openai.chat(process.env.OPENAI_MODEL_ID!),
     schema,
     prompt: 'Generate a fruit with some description.',
   });
